@@ -4,6 +4,10 @@
 */
 function findMaxNumber(num1, num2){
   //Write your code here
+  //option1
+  //return num1>num2?num1:num2;
+  //option2
+  return  Math.max(num1,num2)
 }
 
 // Usage of your function
