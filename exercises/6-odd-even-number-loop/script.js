@@ -11,6 +11,13 @@
  */
 function isOddEvenNumber(curLimit) {
   // your code goes here
+  for (let index = 0; index <= curLimit; index++) {
+    if (index % 2 == 0) {
+      console.log(index, 'EVEN')
+    } else {
+      console.log(index, 'ODD')
+    }
+  }
 }
 
 // Usage example:
