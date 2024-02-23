@@ -1,6 +1,12 @@
 // Show only string properties of an object
 function showStringProperties(curObj) {
   // your code goes here
+  const result=[];
+
+  for (a in curObj) {
+    if(typeof  curObj[a] == 'string')
+        console.log(a)
+  }
 }
 
 // usage example:

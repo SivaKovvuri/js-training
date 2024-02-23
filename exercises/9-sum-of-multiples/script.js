@@ -11,7 +11,15 @@
   6. After the loop, it logs a message to the console with the sum of the multiples of 3 and 5 up to `curLimit`.
  */
 function sumOfMultiples(curLimit) {
+  let r = 0;
   // your code goes here
+  for (let index = 1; index < curLimit; index++) {
+
+    if (index % 3 == 0 || index % 5 == 0) {
+      r = r + index;
+    }
+  }
+  console.log(r)
 }
 
 // usage:
