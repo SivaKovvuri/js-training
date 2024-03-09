@@ -2,8 +2,10 @@
   * Sum of Arguments
   * Create a function that sums all the arguments passed to it.
  */
-function sumOfArguments(/* args */){
+function sumOfArguments(...args){
   // your code goes here
+  console.log('args',args)
+  return args.reduce((acc,val)=> acc+val);
 }
 
 // Usage: pass arguments
