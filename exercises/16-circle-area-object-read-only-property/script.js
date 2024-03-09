@@ -9,6 +9,9 @@ const CIRCLE = {
   bgColor: 'gray',
   radius: 1,
   /* your code */
+  get area(){
+    return Math.PI * this.radius **2;
+  }
 }
 
 // Usage example: call the area property
