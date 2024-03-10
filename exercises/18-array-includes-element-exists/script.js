@@ -4,6 +4,14 @@
  */
 function includes(arrayToSearch, elementToSearch) {
   // Write your code here
+  
+  for (let index = 0; index < arrayToSearch.length; index++) {
+      if(elementToSearch ===  arrayToSearch[index]){
+        return true;
+      }    
+  }  
+  return false;
+  
 }
 
 // usage example:
