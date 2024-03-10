@@ -2,7 +2,12 @@
  * create a function that will return an object
  */
 function createObjFactoryMethod(name, age, rank, country) {
-  // your code goes here
+  return {
+    name:name,
+    age:age,
+    rank:rank,
+    country:country
+  }
 }
 
 // example usage:
@@ -11,7 +16,11 @@ console.log('Students1', Students1); // { name: 'Dinanath', age: 35, rank: 5, co
 
 // use constructor function to create an object
 function Student(name, age, rank, country) {
-  // your code goes here
+  this.name=name,
+  this.age=age,
+  this.rank=rank,
+  this.country=country
+
 }
 
 // example usage:

@@ -3,6 +3,10 @@
  */
 function Student(name, age, rank, country) {
   // your code goes here
+ this.name=name;
+ this.age=age;
+ this.rank=rank;
+ this.country=country;
 }
 
 // example:
@@ -19,6 +23,12 @@ console.log('Students2', Students2); // Students2 Student {name: "Dinanath", ag
  */
 function isObjectEqual(obj1, obj2) {
   // your code goes here
+  for (const key in obj1) {
+      if(obj1[key] !==  obj2[key]){
+        return false;
+      }
+  }
+  return true;
 }
 
 console.log('isEqual', isObjectEqual(Students1, Students2)); // true
@@ -28,6 +38,7 @@ console.log('isEqual', isObjectEqual(Students1, Students2)); // true
  */
 function isObjectPointSame(obj1, obj2) {
   // your code goes here
+  return obj1 === obj2;
 }
 
 // Example:

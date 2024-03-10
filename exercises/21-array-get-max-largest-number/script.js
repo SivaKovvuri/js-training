@@ -4,6 +4,9 @@
  */
 function getLargestNumber(arrayToSearch) {
   // Write your code here
+  if(arrayToSearch.length <= 0)
+    return 
+  return arrayToSearch.reduce((acc,val)=> acc>val?acc:val)
 }
 
 // Example

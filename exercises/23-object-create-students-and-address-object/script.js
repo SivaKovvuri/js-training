@@ -19,6 +19,13 @@ const Address = {
  */
 function showObjectDetails(obj) {
   // Write code here
+  for (const key in obj) {
+    if (Object.hasOwnProperty.call(object, key)) {
+      console.log(`${key},${obj[key]}`)
+      
+    }
+    console.log()
+  }
 }
 
 // Expected output:

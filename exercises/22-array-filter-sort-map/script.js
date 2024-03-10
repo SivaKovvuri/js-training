@@ -14,6 +14,5 @@ const studentsArray = [
 
  */
 
-const results = ``/* Your code here */;
-
+const results = studentsArray.filter(x=>x.year === 2019).sort((a,b)=>(b.ranking - a.ranking)).reverse().map(x=>x.name);
 console.log('Higest Rank Holders:', results); // ['Amit', 'Suraj']
