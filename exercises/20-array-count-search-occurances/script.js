@@ -6,6 +6,8 @@
  */
 function countSearchOccurances(arrayToSearch, elementsToSearch) {
   // your code goes here
+  let y= arrayToSearch.filter(x=> x === elementsToSearch )
+  return y.length;
 }
 
 // usage:
